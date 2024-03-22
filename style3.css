@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'inter', sans-serif;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+body {
+    background: linear-gradient(#2C3156, #1b1a33);
+    overflow-y: hidden;
+}
+
+nav {
+    position: fixed; /* Mantém a lista de navegação fixa na tela */
+    top: 20px; /* Ajusta a distância do topo */
+    right: 20px; /* Ajusta a distância da direita */
+    z-index: 999; /* Garante que a lista de navegação fique acima de outros elementos */
+}
+.logo img{
+    width: 170px;
+    margin-top: 20px; /* Ajusta a margem superior */
+    margin-left: 20px; /* Ajusta a margem esquerda */
+    position: absolute; /* Define o posicionamento absoluto */
+    top: 20px; /* Define a distância do topo */
+    left: 20px; /* Define a distância da esquerda */
+    position: fixed;
+}
+.logodamarvel img{
+    width: 100px;
+    margin-top: 20px;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+
+}
+
+nav ul li {
+    padding: 0 15px;
+    font-size: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: red;
+}
+section{
+    display: flex;
+    align-content: center;
+    position: relative;
+    min-height: 100;
+}
+
+.section_text {
+    color: white;
+    width: 50%;
+    text-align: center;
+}
+
+#video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    z-index: 1; 
+}
+
+.content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+}
+.section_text{
+    color: white;
+    width: 50%;
+    text-align: center;
+}
+.section_text h1{
+    font-size: 5rem;
+    margin-top: 10px;
+    text-shadow: 3px 0 red,
+    -3px 0 red,
+    0 3px red,
+    0 -3px red,
+    2px 2px red,
+    -2px -2px red,
+    2px -2px red,
+    -2px 2px red;
+}
+.section_text p{
+    font-size: 20px;
+    margin:30px 0;
+    font-weight: 400;
+    text-align: left;
+}
+.section_text div{
+    text-align: left; 
+}
+.section_text div button{
+    font-size: 22px;
+    color: white;
+    border: none;
+    background-color: transparent;
+    margin-right: 30px;
+    font-weight: 300;
+}
+.section_text div button i{
+    font-size: 38px;
+    margin-right: 20px;
+}
+.section_text div button:first-child{
+    display: inline-flex;
+    align-items: center;
+}
+.section_text div button:last-child{
+    border:1px solid white;
+    border-radius:50px;
+    padding:20px;
+}
